@@ -35,7 +35,7 @@ class MovieSelectionScreen extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/39774.jpg'), // Правильний шлях до активу
+                image: AssetImage('assets/images/39774.jpg'), 
                 fit: BoxFit.cover,
               ),
             ),
@@ -55,7 +55,7 @@ class MovieSelectionScreen extends StatelessWidget {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                        backgroundColor: Colors.blue, // Синій колір кнопки
+                        backgroundColor: Colors.blue, 
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -70,7 +70,7 @@ class MovieSelectionScreen extends StatelessWidget {
                       },
                       child: Text(
                         movie,
-                        style: TextStyle(fontSize: 18, color: Colors.white), // Колір тексту білий
+                        style: TextStyle(fontSize: 18, color: Colors.white), 
                       ),
                     ),
                   ),
@@ -93,12 +93,12 @@ class SessionSelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Вибір сеансу'), // Назва в AppBar
+        title: Text('Вибір сеансу'), 
         backgroundColor: Colors.blueAccent,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back), // Іконка стрілки назад
+          icon: Icon(Icons.arrow_back), 
           onPressed: () {
-            Navigator.of(context).pop(); // Повернення на попередній екран
+            Navigator.of(context).pop(); 
           },
         ),
       ),
@@ -118,7 +118,7 @@ class SessionSelectionScreen extends StatelessWidget {
               Text(
                 'Виберіть сеанс для фільму $movie',
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
-                textAlign: TextAlign.center, // Вирівнювання по центру
+                textAlign: TextAlign.center, 
               ),
               SizedBox(height: 20),
               for (String session in sessions[movie]!)
